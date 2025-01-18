@@ -1,1 +1,9 @@
+// Settings
 
+"VIDEO_OVERLAY" = "동영상 오버레이";
+"TOP" = "상단";
+"TOP_DESC" = "오른쪽 상단, 자동 재생, 자막, 전송 및 오버플로 메뉴가 있는 위치입니다.";
+"BOTTOM" = "하단";
+"BOTTOM_DESC" = "오른쪽 하단, 전체 화면 버튼이 있는 위치입니다.";
+"ORDER" = "정렬";
+"ORDER_NONE" = "설정 해제";
