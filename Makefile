@@ -1,13 +1,8 @@
-ifeq ($(SIMULATOR),1)
-	ARCHS = arm64 x86_64
-	TARGET = simulator:clang:latest:15.0
-else
-	ARCHS = arm64
-	ifeq ($(THEOS_PACKAGE_SCHEME),rootless)
-		TARGET = iphone:clang:latest:15.0
-	else
-		TARGET = iphone:clang:latest:11.0
-	endif
+ifeq ($(ROOTLESS),1)
+THEOS_PACKAGE_SCHEME=rootless
+
+FINALPACKAGE=1
+TARGET = iphone:clang:latest:11.0
 endif
 PACKAGE_VERSION = 2.1.1
 INSTALL_TARGET_PROCESSES = YouTube
